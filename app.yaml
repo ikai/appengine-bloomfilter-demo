@@ -1,0 +1,12 @@
+application: ikaisscratchpad 
+version: 2 
+runtime: python
+api_version: 1
+default_expiration: "1d"
+
+inbound_services:
+- mail
+
+handlers:
+- url: /
+  script: main.py

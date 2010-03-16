@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <h1>Bloom Filter demo</h1>
+
+    {% if status %}
+    <div class="result">
+      
+      <h2>Attempted to add: "{{value}}":</h2>
+      <strong>Add successful? </strong> {{status}}
+    </div>
+    {% endif %}
+
+    <form action="/" method="POST">
+      <label for="value">Value to add to filter</label>
+      <input id="value" type="text" name="value" value="Enter value here"/>
+      <input type="submit">
+    </form>
+  </body>
+</html>
