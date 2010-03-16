@@ -1,0 +1,5 @@
+Demo of using Bloom Filters in App Engine.
+
+Bloom filter code taken from this mailing list post:
+
+http://lists.canonical.org/pipermail/kragen-hacks/2006-August/000431.html
