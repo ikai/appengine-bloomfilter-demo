@@ -8,5 +8,5 @@ inbound_services:
 - mail
 
 handlers:
-- url: /
+- url: /(.*)
   script: main.py

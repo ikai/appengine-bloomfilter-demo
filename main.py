@@ -40,9 +40,14 @@ class MainHandler(webapp.RequestHandler):
                   + "&value=" + value)
                   
 
+class FlushCacheHandler(webapp.RequestHandler):
+  def post(self):
+    memcache.flush_all()
+    self.redirect("/")
 
 application = webapp.WSGIApplication([ 
                                       ('/', MainHandler),
+                                      ('/flush', FlushCacheHandler),
                                      ], debug=True)
 
 def main():
